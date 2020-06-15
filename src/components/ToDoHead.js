@@ -28,7 +28,6 @@ const TodoHeadBlock = styled.div`
 
 function ToDoHead() {
   const todos = useToDoState();
-  console.log(todos);
   const tasksLeft = todos.filter((todo) => !todo.done);
 
   const today = new Date();
