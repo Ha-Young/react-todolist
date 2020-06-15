@@ -73,7 +73,7 @@ export function ToDoProvider({ children }) {
 export function useToDoState() {
   const context = useContext(ToDoStateContext);
   if (!context) {
-    return new Error('Cannot find ToDoStateContext Provider');
+    throw new Error('Cannot find ToDoStateContext Provider');
   }
   return context;
 }
@@ -81,7 +81,7 @@ export function useToDoState() {
 export function useToDoDispatch() {
   const context = useContext(ToDoDispatchContext);
   if (!context) {
-    return new Error('Cannot find ToDoDispatchContext Provider');
+    throw new Error('Cannot find ToDoDispatchContext Provider');
   }
   return context;
 }
@@ -89,7 +89,7 @@ export function useToDoDispatch() {
 export function useToDoNextId() {
   const context = useContext(ToDoNextIdContext);
   if (!context) {
-    return new Error('Cannot find ToDoNextIdContext Provider');
+    throw new Error('Cannot find ToDoNextIdContext Provider');
   }
   return context;
 }

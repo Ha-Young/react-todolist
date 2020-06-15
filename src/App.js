@@ -4,6 +4,7 @@ import ToDoTemplate from './components/ToDoTemplate';
 import ToDoHead from './components/ToDoHead';
 import ToDoList from './components/ToDoList';
 import ToDoCreate from './components/ToDoCreate';
+import { ToDoProvider } from './components/ToDoContext';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -13,14 +14,14 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-    <>
+    <ToDoProvider>
       <GlobalStyle />
       <ToDoTemplate>
         <ToDoHead />
         <ToDoList />
         <ToDoCreate />
       </ToDoTemplate>
-    </>
+    </ToDoProvider>
   );
 }
 
