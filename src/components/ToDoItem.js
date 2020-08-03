@@ -88,4 +88,4 @@ function ToDoItem({ id, done, text }) {
   );
 }
 
-export default React.useMemo(ToDoItem);
+export default React.memo(ToDoItem);
