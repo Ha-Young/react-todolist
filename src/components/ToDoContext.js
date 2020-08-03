@@ -1,37 +1,6 @@
 import React, { useReducer, createContext, useContext, useRef } from 'react';
 
-const initialToDos = [
-  {
-    id: 1,
-    text: '출근하기',
-    done: true,
-  },
-  {
-    id: 2,
-    text: '반차쓰기',
-    done: true,
-  },
-  {
-    id: 3,
-    text: '집에서 조금 쉬기',
-    done: true,
-  },
-  {
-    id: 4,
-    text: '카페에서 공부하기 (ToDoList 끝내기)',
-    done: false,
-  },
-  {
-    id: 5,
-    text: '밥 먹기',
-    done: false,
-  },
-  {
-    id: 6,
-    text: 'API 강의 듣기',
-    done: false,
-  },
-];
+const initialToDos = [];
 
 function toDoReducer(state, action) {
   switch (action.type) {
